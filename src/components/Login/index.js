@@ -31,12 +31,12 @@ const Login = props => {
   }
 
   return (
-    <>
+    <div className="div">
       <h1>Please Login</h1>
       <button type="button" onClick={onClickLogin}>
         Login with Sample Creds
       </button>
-    </>
+    </div>
   )
 }
 export default Login
