@@ -1,22 +1,16 @@
 // Write your JS code here
-import Cookies from 'js-cookie'
+
 import Header from '../Header'
+import LogoutButton from '../LogoutButton'
 
-const About = () => {
-  const onClickLogout = () => {
-    Cookies.remove('jwt_token')
-  }
-
-  return (
-    <div className="container">
-      <Header />
-      <div className="about-container">
-        <h1>About Route</h1>
-        <button type="button" onClick={onClickLogout}>
-          Logout
-        </button>
-      </div>
+const About = () => (
+  <div className="container">
+    <Header />
+    <div className="about-container">
+      <h1>About Route</h1>
+      <LogoutButton />
     </div>
-  )
-}
+  </div>
+)
+
 export default About
