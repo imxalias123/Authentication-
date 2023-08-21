@@ -9,15 +9,15 @@ const Home = () => {
   }
 
   return (
-    <>
+    <div className="container">
       <Header />
-      <div>
+      <div className="home-container">
         <h1>Home Route</h1>
         <button type="button" onClick={onClickLogout}>
           Logout
         </button>
       </div>
-    </>
+    </div>
   )
 }
 
